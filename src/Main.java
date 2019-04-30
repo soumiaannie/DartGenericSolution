@@ -31,7 +31,7 @@ public class Main {
 
     }
 
-    private static boolean validateRadius(double radius, int circlePosition) {
+    private  static boolean validateRadius(double radius, int circlePosition) {
         if (radius <= 0) {
             System.out.println("Invalid Radius");
             return false;

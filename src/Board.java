@@ -46,7 +46,7 @@ public class Board extends Circle {
 
     private double calculatePointsEarned(double dartLocation) {
 
-        for (int i = 0; i <= noOfCircles; i++) {
+        for (int i = 0; i < noOfCircles; i++) {
 
             if (i < 1) {
 
