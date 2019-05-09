@@ -50,16 +50,16 @@ public class Board extends Circle {
 
             if (i < 1) {
 
-                if (dartLocation >= 0 && dartLocation <= getBoardCircles().get(i).getRadius()) {
+                if (dartLocation >= 0 && dartLocation <= boardCircles.get(i).getRadius()) {
                     System.out.println("Dart is inside the " + (i+1) + "th circle.");
-                    score= getBoardCircles().get(i).getScore();
+                    score= boardCircles.get(i).getScore();
                     break;
                 }
 
             } else {
-                if (dartLocation > getBoardCircles().get(i - 1).getRadius() && dartLocation <= getBoardCircles().get(i).getRadius()) {
+                if (dartLocation > boardCircles.get(i - 1).getRadius() && dartLocation <= boardCircles.get(i).getRadius()) {
                     System.out.println("Dart is inside the " + (i+1) + "th circle.");
-                    score= getBoardCircles().get(i).getScore();
+                    score= boardCircles.get(i).getScore();
                     break;
 
                 }
@@ -84,7 +84,6 @@ public class Board extends Circle {
 
         }
     }
-
 
 
 

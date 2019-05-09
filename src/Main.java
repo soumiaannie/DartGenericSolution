@@ -7,10 +7,14 @@ public class Main {
     {
         double radius=0.0, score=0.0;
         double pointsEarned;
+
         board=new Board(3,10);
-        System.out.println(board.getNoOfCircles());
-        System.out.println(board.getRadius());
+
+        System.out.println("The no of circles in the board are: " +board.getNoOfCircles());
+        System.out.println("The radius of the board is: " + board.getRadius());
+
         Scanner scanner = new Scanner(System.in);
+
         for(int i=0; i <= board.getNoOfCircles()-1; i++)
         {
 
@@ -20,6 +24,7 @@ public class Main {
             } while(!(validateRadius(radius,i)));
             System.out.println("Enter  " + i +"  th Circle score. Press Enter to continue");
             score=scanner.nextDouble();
+
             board.addCircle(radius, score);
             System.out.println("Circle sent for creation." + "  Radius = " +radius + "  Score =" +score);
         }
